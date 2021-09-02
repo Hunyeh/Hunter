@@ -1,0 +1,83 @@
+/* header styling */
+header {
+    padding: 15px 25px;
+    background-image: url("../Hunter/images/sunrise.jpg"); 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+header h1 {
+    color: #666;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 15px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 25px;
+}
+
+/* sunrise background styling */
+.sunrise {
+    background-image: url("../Hunter/images/sunrise.jpg");
+    background-size: cover;
+    width: 102%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.sun-header {
+    font-size: 30px;
+    text-align: center;
+}
+
+section {
+    padding: 25px;
+}
+
+/* about me styling */
+.about-me {
+    background-color: white;
+}
+
+.about-header {
+    color: navy;
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 5px solid;
+    padding-bottom: 20px;
+    width: 50%;
+    margin: 10px auto 35px auto;
+}
+ .about.info {
+     color: rgb(223, 70, 0);
+ }
