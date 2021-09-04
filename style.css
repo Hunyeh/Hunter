@@ -205,4 +205,8 @@ section {
     .sunrise {
         width: 100%;
     }
+
+    .Portfolio img {
+        flex: 0 70%;
+    }
 }
