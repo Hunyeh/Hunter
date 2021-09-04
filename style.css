@@ -3,7 +3,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
 }
 
 /* header styling */
@@ -25,21 +24,21 @@ body {
 .header h1 {
     font: orange;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 55px;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 1);
 }
 
-header a {
+.header a {
     text-decoration: none;
     color: rgb(255, 151, 15);
 }
 
-header nav {
+.header nav {
     margin: 7px 15px;
 }
 
-header nav ul {
+.header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,8 +46,23 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+.header nav ul li a {
     padding: 10px 25px;
+    font-size: 25px;
+}
+
+/* footer styling */
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    background-color: white;
+    width: 100%;
+}
+
+footer h2 {
+    color: rgb(255, 151, 15);
 }
 
 /* sunrise background styling */
@@ -83,10 +97,11 @@ section {
 }
 
 /* about me styling */
-.about-me {
+.About-me {
     background-color: white;
     padding: 15px;
     margin: none;
+    width: 100%;
 }
 
 .about-header {
@@ -105,17 +120,22 @@ section {
 }
 
 /* portfolio section styling */
-.portfolio {
+.Portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
 }
 
-.portfolio img {
+.port-header {
+    text-align: center;
+    color: rgb(255, 151, 15);
+}
+
+.Portfolio img {
     width: 45%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 15px;
     border: 3px solid rgb(255, 151, 15);
     background-size: cover;
@@ -124,8 +144,10 @@ section {
 }
 
 
-.portfolio span {
+.Portfolio span {
     text-align: center;
+    background-color: rgb(129, 205, 255);
+    margin-top: auto;
 }
 
 /* contact me section styling */
@@ -143,4 +165,44 @@ section {
     flex-wrap: wrap;
     flex-direction: column;
     width: 45%;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid;
+    padding: 7px 5px;
+    width: 100%;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color:rgb(255, 151, 15);
+    color:rgb(126, 126, 126) ;
+}
+
+/* media query for 980px max */
+@media screen and (max-width: 980px) {
+    .header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    .header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header nav ul {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    footer h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sunrise {
+        width: 100%;
+    }
 }
