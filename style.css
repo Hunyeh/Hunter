@@ -7,7 +7,7 @@ body {
 
 /* header styling */
 .header {
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
     background-image: url("../Hunter/images/sunrise.jpg"); 
     width: 100%;
     display: flex;
@@ -56,7 +56,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
     background-color: white;
     width: 100%;
 }
@@ -92,14 +92,10 @@ footer h2 {
     font-weight: lighter;
 }
 
-section {
-    padding: 25px;
-}
-
 /* about me styling */
 .About-me {
     background-color: white;
-    padding: 15px;
+    padding: 15px 0;
     margin: none;
     width: 100%;
 }
@@ -117,6 +113,7 @@ section {
 .about-info {
     text-align: center;
     color: rgb(129, 205, 255);
+    padding: 0 50px;
 }
 
 /* portfolio section styling */
@@ -133,22 +130,50 @@ section {
 }
 
 .Portfolio img {
-    width: 45%;
+    /* width: 45%;
     display: flex;
-    flex-direction: row;
-    border-radius: 15px;
-    border: 3px solid rgb(255, 151, 15);
+    flex-direction: row; */
+    /* border-radius: 15px; */
+    /* border: 3px solid rgb(255, 151, 15); */
     background-size: cover;
     background-position: center;
-    min-height: 250px; 
+    /* min-height: 250px;  */
 }
 
 
 .Portfolio span {
     text-align: center;
     background-color: rgb(129, 205, 255);
-    margin-top: auto;
+    /* margin-top: auto; */
+    padding: 20px;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 30px;
+  } 
+
+  .flex-item {
+    /* makes each one 45%, putting 10% between each element on the page */
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-item img  {
+    width: 100%;
+    height: 40vh;
+    /* padding: 20px; */
+  }
+
+  .flex-item img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+  }
 
 /* contact me section styling */
 .contact-me {
@@ -157,6 +182,22 @@ section {
     flex-wrap: wrap;
     flex-direction: column;
     width: 45%;
+    padding: 20px 10px;
+}
+
+.contact-me h3 {
+    color: rgb(255, 151, 15);
+    text-align: center;
+}
+
+.contact-me p {
+    color: black;
+    text-align: center;
+}
+
+.contact-me address {
+    text-align: center;
+    text-decoration: none;
 }
 
 .contact-form {
@@ -165,6 +206,8 @@ section {
     flex-wrap: wrap;
     flex-direction: column;
     width: 45%;
+    text-align: center;
+    padding: 20px 10px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -205,8 +248,32 @@ section {
     .sunrise {
         width: 100%;
     }
+}
 
-    .Portfolio img {
-        flex: 0 70%;
+/* media query for screens 768px and smaller */
+@media screen and (max-width: 768px) {
+    .flex-item img {
+        padding: 20px 15px;
+    }
+
+    .header nav ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header nav ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 5px;
+    }
+    .header a {
+        font-size: 40px;
+    }
+
+    .header nav ul li a {
+        font-size: 15px;
     }
 }
